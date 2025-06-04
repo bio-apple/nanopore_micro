@@ -5,9 +5,11 @@
 
 *step1:base calling(dorado)*
 
+*step2:quality control(Filtlong)*
 
+*step3:genome assembly(Flye)*
 
-
+*step4:correct draft sequences(Medaka)*
 
 ## 参考文献
 
