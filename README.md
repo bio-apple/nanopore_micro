@@ -1,6 +1,3 @@
-# models
-
-
 ## Docker
 
 <pre>docker pull fanyucai1/nanopore_micro</pre>
