@@ -12,8 +12,8 @@ In this small evaluation of 13 isolates we found that nanopore long-read-only R1
 
 It was shown that the **Flye** program demonstrates plausible assembly results relative to others (Shasta, Canu, and Necat). 
 The required coverage depth for successful assembly strongly depends on the size of reads. 
-When using high-quality samples with an average read length of 8 Kbp or more, the coverage depth of **30×** is sufficient to assemble the complete genome de novo and reliably determine single-nucleotide variations in it. 
-For samples with shorter reads with mean lengths of 2 Kbp, a higher coverage depth of **50×** is required. Avoiding of mechanical mixing is obligatory for samples preparation.
+When using high-quality samples with an average read length of **8 Kbp or more**, the coverage depth of **30×** is sufficient to assemble the complete genome de novo and reliably determine single-nucleotide variations in it. 
+For samples with shorter reads with **mean lengths of 2 Kbp**, a higher coverage depth of **50×** is required. Avoiding of mechanical mixing is obligatory for samples preparation.
 Nanopore sequencing can be used alone to determine antibiotics-resistant genetic features of bacterial strains.
 
 [Khrenova M G, Panova T V, Rodin V A, et al. Nanopore sequencing for de novo bacterial genome assembly and search for single-nucleotide polymorphism[J]. International Journal of Molecular Sciences, 2022, 23(15): 8569.](https://www.mdpi.com/1422-0067/23/15/8569)
