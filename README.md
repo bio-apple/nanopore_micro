@@ -1,17 +1,19 @@
 
+## Docker
 
+<pre>docker pull fanyucai1/nanopore_micro</pre>
 
 ## details
 
-*step1:base calling(dorado:https://github.com/nanoporetech/dorado)*
+**step1:base calling**(dorado:https://github.com/nanoporetech/dorado)
 
 NanoPlot:https://github.com/wdecoster/NanoPlot
 
-*step2:quality control(Filtlong:https://github.com/rrwick/Filtlong)*
+step2:quality control(Filtlong:https://github.com/rrwick/Filtlong)
 
-*step3:genome assembly(Flye:https://github.com/mikolmogorov/Flye)*
+step3:genome assembly(Flye:https://github.com/mikolmogorov/Flye)
 
-*step4:correct draft sequences(Medaka:https://github.com/nanoporetech/medaka)*
+step4:correct draft sequences(Medaka:https://github.com/nanoporetech/medaka)
 
 ## 参考文献
 
