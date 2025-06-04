@@ -3,7 +3,7 @@
 
 ## details
 
-*step1:base calling(dorado:)*
+*step1:base calling(dorado:https://github.com/nanoporetech/dorado)*
 
 NanoPlot:https://github.com/wdecoster/NanoPlot
 
