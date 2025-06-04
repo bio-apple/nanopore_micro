@@ -1,6 +1,11 @@
 
 
 
+## details
+
+*step1:base calling(dorado)*
+
+
 
 
 
