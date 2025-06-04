@@ -6,6 +6,8 @@
 
 ## 参考文献
 
+In this small evaluation of 13 isolates we found that nanopore long-read-only R10.4.1/kit 14 assemblies with updated basecallers trained using bacterial methylated DNA produce accurate assemblies with **≥40×depth**, sufficient to be cost-effective compared with hybrid ONT/Illumina sequencing in our setting.
+
 [Sanderson N D, Hopkins K M V, Colpus M, et al. Evaluation of the accuracy of bacterial genome reconstruction with Oxford Nanopore R10. 4.1 long-read-only sequencing[J]. Microbial Genomics, 2024, 10(5): 001246.](https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.001246)
 
 It was shown that the **Flye** program demonstrates plausible assembly results relative to others (Shasta, Canu, and Necat). 
