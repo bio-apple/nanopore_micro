@@ -3,13 +3,15 @@
 
 ## details
 
-*step1:base calling(dorado)*
+*step1:base calling(dorado:)*
 
-*step2:quality control(Filtlong)*
+NanoPlot:https://github.com/wdecoster/NanoPlot
 
-*step3:genome assembly(Flye)*
+*step2:quality control(Filtlong:https://github.com/rrwick/Filtlong)*
 
-*step4:correct draft sequences(Medaka)*
+*step3:genome assembly(Flye:https://github.com/mikolmogorov/Flye)*
+
+*step4:correct draft sequences(Medaka:https://github.com/nanoporetech/medaka)*
 
 ## 参考文献
 

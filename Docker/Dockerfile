@@ -5,6 +5,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends  libcurl4-opens
     mkdir -p /ref/ /script/ /raw_data/ /outdir/ /software && \
     wget -q -O /miniforge.sh https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh && \
     bash /miniforge.sh -b -p /opt/conda && rm /miniforge.sh &&  \
-    cd /software && git clone https://github.com/fenderglass/Flye && cd Flye && make && \
+    /opt/conda/bin/mamba create --name flye --channel bioconda flye && \
     git clone https://github.com/rrwick/Filtlong.git && cd Filtlong && make -j && cp bin/filtlong /usr/local/bin && \
     /opt/conda/bin/conda install -c bioconda nanoplot
