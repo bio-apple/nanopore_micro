@@ -1,19 +1,35 @@
+# models
+
 
 ## Docker
 
 <pre>docker pull fanyucai1/nanopore_micro</pre>
 
+## models
+
+<pre>docker run fanyucai1/nanopore_micro /software/dorado-1.0.0-linux-x64/bin/dorado download --list</pre>
+
+<pre>
+dna_r9.4.1_e8.1_sup@v4.0.0
+│   │    │     │     │
+│   │    │     │     └── 模型版本号
+│   │    │     └──────── 模型类型（fast, hac, sup, duplex）
+│   │    └────────────── flow cell 化学版本（E8.1）
+│   └─────────────────── 测序芯片（如 R9.4.1, R10.4.1）
+└────────────────────── 模型用途（dna, rna）
+</pre>
+
 ## details
 
 **step1:base calling**(dorado:https://github.com/nanoporetech/dorado)
 
-NanoPlot:https://github.com/wdecoster/NanoPlot
+**step2:Sequencing Output Statistics**NanoPlot:https://github.com/wdecoster/NanoPlot
 
-step2:quality control(Filtlong:https://github.com/rrwick/Filtlong)
+**step3:quality control**(Filtlong:https://github.com/rrwick/Filtlong)
 
-step3:genome assembly(Flye:https://github.com/mikolmogorov/Flye)
+**step4:genome assembly**(Flye:https://github.com/mikolmogorov/Flye)
 
-step4:correct draft sequences(Medaka:https://github.com/nanoporetech/medaka)
+**step5:correct draft sequences**(Medaka:https://github.com/nanoporetech/medaka)
 
 ## 参考文献
 
