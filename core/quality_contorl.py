@@ -6,7 +6,7 @@ docker='nanopore_micro:latest'
 def run(fastq,outdir,prefix,min_len=1000,percent=90,R1=None,R2=None):
     os.makedirs(outdir,exist_ok=True)
     fastq=os.path.abspath(fastq)
-    cmd=f'docker run -v {fastq}:/raw_data/{fastq.split("/")[-1]} -v {os.path.abspath(outdir)}:/outdir '
+    cmd=f'docker run --rm -v {fastq}:/raw_data/{fastq.split("/")[-1]} -v {os.path.abspath(outdir)}:/outdir '
     if R1 and R2:
         R1 = os.path.abspath(R1)
         R2 = os.path.abspath(R2)
