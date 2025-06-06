@@ -12,6 +12,8 @@ def run(fq,kind,outdir,prefix):
         cmd+=f'--nano-hq /raw_data/{fq.split("/")[-1]} '
     elif kind=="R9":
         cmd += f'--nano-hq /raw_data/{fq.split("/")[-1]} --read-error 0.05 '
+    elif kind=="cor":
+        cmd+=f'--nano-corr /raw_data/{fq.split("/")[-1]}'
     else:
         cmd+=f'--nano-raw /raw_data/{fq.split("/")[-1]} '
     cmd+="\'"
@@ -25,5 +27,5 @@ if __name__=="__main__":
     parser.add_argument("-i",'--input',help="Input reads can be in FASTA or FASTQ format, uncompressed or compressed with gz",required=True)
     parser.add_argument("-o", "--outdir", help="directory of output", default=os.getcwd())
     parser.add_argument("-p", "--prefix", help="prefix of output", required=True)
-    parser.add_argument("-k",'--kind',help="which type Oxford Nanopore",type=str,choice=['R10','R9','older'],required=True)
+    parser.add_argument("-k",'--kind',help="which type Oxford Nanopore,If you have error-corrected ONT reads, use correct",type=str,choice=['R10','R9','older','correct'],required=True)
     args=parser.parse_args()
