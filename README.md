@@ -53,3 +53,13 @@ using Illumina short reads can be considered as a cost-effective but less conven
 4.  Of the filtering, basecalling, and polishing tested, we recommend avoiding using Canu or Raven alone when assembling LR to determine the presence of ARG. Overall, **Flye** is the best assembler we tested for LR assemblies. Guppy basecalling has clearly and consistently improved since its release. As re-basecalling old FAST5 data benefits from these improvements, we wholeheartedly recommend that **FAST5 data from ongoing experiments be saved for re-basecalling**.
 
     [Boostrom I, Portal E A R, Spiller O B, et al. Comparing long-read assemblers to explore the potential of a sustainable low-cost, low-infrastructure approach to sequence antimicrobial resistant bacteria with oxford nanopore sequencing[J]. Frontiers in Microbiology, 2022, 13: 796465.](https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2022.796465/full)
+
+5.  **Trycycler：https://github.com/rrwick/Trycycler** is a tool for generating consensus long-read assemblies for bacterial genomes. I.e. if you have multiple long-read assemblies for the same isolate, Trycycler can combine them into a single assembly that is better than any of your inputs.
+
+    [Wick R R, Judd L M, Cerdeira L T, et al. Trycycler: consensus long-read assemblies for bacterial genomes[J]. Genome biology, 2021, 22: 1-17.](https://github.com/rrwick/Trycycler)
+
+## Links:
+
+Assembling the perfect bacterial genome:https://github.com/rrwick/Perfect-bacterial-genome-tutorial/wiki
+
+[Wick R R, Judd L M, Holt K E. Assembling the perfect bacterial genome using Oxford Nanopore and Illumina sequencing[J]. PLOS Computational Biology, 2023, 19(3): e1010905.](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010905)
