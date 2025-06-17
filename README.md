@@ -48,7 +48,13 @@ dna_r9.4.1_e8.1_sup@v4.0.0
 
 **step4:genome assembly**(Flye:https://github.com/mikolmogorov/Flye)
 
-**step5:correct draft sequences**(Medaka:https://github.com/nanoporetech/medaka)
+**step5:correct draft sequences,variant calling and stats.**(Medaka:https://github.com/nanoporetech/medaka and bcftools:https://github.com/samtools/bcftools)
+
+https://github.com/epi2me-labs/wf-bacterial-genomes/blob/master/modules/local/medaka.nf
+
+**step6:The contigs were annotated with Prokka**
+
+
 
 ## Reference
 
