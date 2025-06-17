@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends libcurl4-openss
     mkdir -p /ref/ /script/ /raw_data/ /outdir/ /software && \
     wget -q -O /miniforge.sh https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh && \
     bash /miniforge.sh -b -p /opt/conda && rm /miniforge.sh && /opt/conda/bin/pip3 install pod5 pandas ezcharts matplotlib pysam dominate && \
-    /opt/conda/bin/mamba install bioconda::flye bioconda::filtlong bioconda::nanoplot &&  \
+    /opt/conda/bin/mamba install bioconda::flye bioconda::filtlong bioconda::nanoplot conda-forge::biopython &&  \
     /opt/conda/bin/conda create -n medaka -c conda-forge -c nanoporetech -c bioconda medaka prokka resfinder seqsero2 fastcat mlst mosdepth pomoxis &&  \
     /opt/conda/bin/conda clean -a -y && \
     cd /software/ && wget https://cdn.oxfordnanoportal.com/software/analysis/dorado-1.0.2-linux-x64.tar.gz && tar xzvf dorado-1.0.2-linux-x64.tar.gz && rm -rf dorado-1.0.2-linux-x64.tar.gz
