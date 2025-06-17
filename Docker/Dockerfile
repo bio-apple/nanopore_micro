@@ -9,4 +9,4 @@ RUN apt-get update && apt-get install -y --no-install-recommends libcurl4-openss
     bash /miniforge.sh -b -p /opt/conda && rm /miniforge.sh &&  \
     /opt/conda/bin/mamba install bioconda::flye bioconda::filtlong bioconda::nanoplot &&  \
     /opt/conda/bin/conda create -n medaka -c conda-forge -c nanoporetech -c bioconda medaka && /opt/conda/bin/conda clean -a -y && \
-    cd /software/ && wget https://cdn.oxfordnanoportal.com/software/analysis/dorado-1.0.2-linux-x64.tar.gz && tar xzvf dorado-1.0.0-linux-x64.tar.gz && rm -rf dorado-1.0.0-linux-x64.tar.gz
+    cd /software/ && wget https://cdn.oxfordnanoportal.com/software/analysis/dorado-1.0.2-linux-x64.tar.gz && tar xzvf dorado-1.0.2-linux-x64.tar.gz && rm -rf dorado-1.0.2-linux-x64.tar.gz
