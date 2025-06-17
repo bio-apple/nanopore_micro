@@ -5,16 +5,14 @@
 The most original/raw data are .fast5 files (earlier versions are multi-FAST5, where each read is stored in a separate HDF5 file), which contain:
 
 <ol>
-<li>Raw electrical signal data</li>
-<li>Metadata needed for basecalling (e.g., sampling rate, channel, run_ID, etc.)</li>
-<li>Usually output by MinKNOW software into a designated folder, for example:</li>
+<li>fast5（HDF5 格式）传统的数据保存方式（一直用到 2023 年左右）:</li>
 
     fast5/
      ├─ FAK12345_pass_0001.fast5
      ├─ FAK12345_pass_0002.fast5
      └─ ...
 
-<li>新版（Guppy basecalling时可以设置 --input_file_format pod5）数据可以是 .pod5：</li>
+<li>pod5（新版）</li>
 
     Pod5 是为减少数据冗余和适应高速数据处理而设计的新数据结构，按 read 划分。
     一样包括 raw signals，但是文件大小更紧凑，适合高速 I/O
