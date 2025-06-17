@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends libcurl4-openss
     rm -rf /var/lib/apt/lists/* && \
     mkdir -p /ref/ /script/ /raw_data/ /outdir/ /software && \
     wget -q -O /miniforge.sh https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh && \
-    bash /miniforge.sh -b -p /opt/conda && rm /miniforge.sh &&  \
+    bash /miniforge.sh -b -p /opt/conda && rm /miniforge.sh &&  /opt/conda/bin/pip3 install pod5\
     /opt/conda/bin/mamba install bioconda::flye bioconda::filtlong bioconda::nanoplot &&  \
     /opt/conda/bin/conda create -n medaka -c conda-forge -c nanoporetech -c bioconda medaka prokka resfinder seqsero2 fastcat mlst mosdepth &&  \
     /opt/conda/bin/conda clean -a -y && \
