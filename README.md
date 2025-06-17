@@ -52,9 +52,13 @@ dna_r9.4.1_e8.1_sup@v4.0.0
 
 https://github.com/epi2me-labs/wf-bacterial-genomes/blob/master/modules/local/medaka.nf
 
-**step6:The contigs were annotated with Prokka**
+**step6:annotation (Prokka:https://github.com/tseemann/prokka)**
 
+**step7:Multi-locus sequence typing (MLST:https://github.com/tseemann/mlst)**
 
+**step8:Antimicrobial resistance (AMR) calling(ResFinder:https://bitbucket.org/genomicepidemiology/resfinder/src/master/)**
+
+**step9:Salmonella serotyping(SeqSero2:https://github.com/denglab/SeqSero2)**
 
 ## Reference
 
