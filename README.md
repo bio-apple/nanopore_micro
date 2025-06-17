@@ -1,6 +1,6 @@
 # Nanopore micro genome assembly
 
-## Raw Data Format 
+## Raw Data
 
 The most original/raw data are .fast5 files (earlier versions are multi-FAST5, where each read is stored in a separate HDF5 file), which contain:
 
