@@ -52,7 +52,7 @@ dna_r9.4.1_e8.1_sup@v4.0.0
 
 **step5:correct draft sequences**(Medaka:https://github.com/nanoporetech/medaka)
 
-## reference
+## Reference
 
 1.  In this small evaluation of 13 isolates we found that nanopore long-read-only R10.4.1/kit 14 assemblies with updated basecallers trained using bacterial methylated DNA produce accurate assemblies with **≥40×depth**, sufficient to be cost-effective compared with hybrid ONT/Illumina sequencing in our setting.
 
