@@ -94,4 +94,6 @@ using Illumina short reads can be considered as a cost-effective but less conven
 
 Assembling the perfect bacterial genome:https://github.com/rrwick/Perfect-bacterial-genome-tutorial/wiki
 
+Bacterial assembly and annotation workflow:https://github.com/epi2me-labs/wf-bacterial-genomes/
+
 [Wick R R, Judd L M, Holt K E. Assembling the perfect bacterial genome using Oxford Nanopore and Illumina sequencing[J]. PLOS Computational Biology, 2023, 19(3): e1010905.](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010905)
