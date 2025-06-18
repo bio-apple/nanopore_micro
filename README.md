@@ -32,7 +32,7 @@ The most original/raw data are .fast5 files (earlier versions are multi-FAST5, w
 dna_r9.4.1_e8.1_sup@v4.0.0
 │   │    │     │     │
 │   │    │     │     └── 模型版本号
-│   │    │     └──────── 模型类型（fast, hac, sup, duplex）
+│   │    │     └──────── 模型类型（fast速度快, hac平衡速度与准确度，满足大部分情况, sup准确度高）
 │   │    └────────────── flow cell 化学版本（E8.1）
 │   └─────────────────── 测序芯片（如 R9.4.1, R10.4.1）
 └────────────────────── 模型用途（dna, rna）
@@ -41,6 +41,10 @@ dna_r9.4.1_e8.1_sup@v4.0.0
 ## details
 
 **step1:base calling**(dorado:https://github.com/nanoporetech/dorado)
+
+    输入:pod5 （如果是fast5格式先进行格式转换）
+    插件安装：pip3 install pod5
+    格式转化:
 
 **step2:Sequencing Output Statistics**NanoPlot:https://github.com/wdecoster/NanoPlot
 
