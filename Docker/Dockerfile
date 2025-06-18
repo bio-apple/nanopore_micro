@@ -7,4 +7,4 @@ RUN apt-get update && apt-get install -y --no-install-recommends libcurl4-openss
     mkdir -p /ref/ /script/ /raw_data/ /outdir/ /software && \
     wget -q -O /miniforge.sh https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh && \
     bash /miniforge.sh -b -p /opt/conda && rm /miniforge.sh && \
-    /opt/conda/bin/pip3 install pod5
+    /opt/conda/bin/pip3 install pod5 ont-fast5-api
