@@ -1,5 +1,7 @@
 # Nanopore micro genome assembly
 
+![nanopore](./Nanopore.png)
+
 ## Raw Data
 
 The most original/raw data are .fast5 files (earlier versions are multi-FAST5, where each read is stored in a separate HDF5 file), which contain:
@@ -43,9 +45,6 @@ POD5 File Format:https://pod5-file-format.readthedocs.io/<br>
 pip3 install pod5
 pod5 convert fast5 ./input/*.fast5 --output converted.pod5
 </pre>
-        
-
-
 
 ## Docker
 
