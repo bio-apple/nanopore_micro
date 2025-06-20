@@ -11,6 +11,8 @@ The most original/raw data are .fast5 files (earlier versions are multi-FAST5, w
      ├─ FAK12345_pass_0001.fast5
      ├─ FAK12345_pass_0002.fast5
      └─ ...
+     分为：single-read FAST5 与 multi-read FAST5
+     如果是single-read FAST5 需要使用ont-fast5-api 将其合并形成multi-read FAST5
 
 <li>pod5（新版）</li>
 
@@ -43,7 +45,7 @@ dna_r9.4.1_e8.1_sup@v4.0.0
 **step1:base calling**(dorado:https://github.com/nanoporetech/dorado)
     
     输入:pod5 （如果是fast5格式先进行格式转换）
-    插件安装：pip3 install pod5
+    插件安装：pip3 install pod5 #(不建议用conda安装)
     格式转化:
     
     dorado basecaller hac pod5s/ > calls.bam    
