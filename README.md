@@ -12,7 +12,7 @@ The most original/raw data are .fast5 files (earlier versions are multi-FAST5, w
      ├─ FAK12345_pass_0002.fast5
      └─ ...
      分为：single-read FAST5 与 multi-read FAST5
-     如果是single-read FAST5 需要使用ont-fast5-api 将其合并形成multi-read FAST5
+     
 
 <li>pod5（新版）</li>
 
@@ -20,6 +20,31 @@ The most original/raw data are .fast5 files (earlier versions are multi-FAST5, w
     一样包括 raw signals，但是文件大小更紧凑，适合高速 I/O
 
 </ol>
+
+## FAST52pod5
+
+微生物基因组拼接的起点一般是fastq或者未比对的BAM
+
+FAST5:
+
+*single-read FAST5--->multi-read FAST5*
+
+ont_fast5_api:https://github.com/nanoporetech/ont_fast5_api<br>
+
+<pre>
+pip3 install ont-fast5-api
+single_to_multi_fast5 --input_path /data/reads --save_path /data/multi_reads --filename_base batch_output --batch_size 100 --recursive
+</pre>
+        
+*multi-read FAST5--->pod5*
+
+POD5 File Format:https://pod5-file-format.readthedocs.io/<br>
+<pre>
+pip3 install pod5
+pod5 convert fast5 ./input/*.fast5 --output converted.pod5
+</pre>
+        
+
 
 
 ## Docker
