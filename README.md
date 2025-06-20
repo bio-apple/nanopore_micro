@@ -50,9 +50,19 @@ pod5 convert fast5 ./input/*.fast5 --output converted.pod5
 
 <pre>docker pull fanyucai1/nanopore_micro</pre>
 
+*software list:*
+
+**/opt/conda/envs/python3/bin:**
+
+    NanoPlot filtlong flye pod5 ont-fast5-api
+
+**/opt/conda/envs/biosoftware/bin:**
+
+    medaka prokka resfinder seqsero2 fastcat mlst mosdepth pomoxis
+
 ## models
 
-<pre>docker run fanyucai1/nanopore_micro /software/dorado-1.0.0-linux-x64/bin/dorado download --list</pre>
+<pre>docker run fanyucai1/nanopore_micro /software/dorado-1.0.2-linux-x64/bin/dorado download --list</pre>
 
 <pre>
 dna_r9.4.1_e8.1_sup@v4.0.0
